@@ -1,4 +1,4 @@
-
+let header = document.querySelector('header')
 let footer = document.querySelector('footer');
 /* scroll event */
 window.addEventListener('scroll', () => {
@@ -8,8 +8,9 @@ window.addEventListener('scroll', () => {
 
     if (scrollPosition >= pageHeight - 5) {
         footer.classList.add('show');
-    } else {
-        footer.classList.remove('show');
-    }
-
+        header.style.display = 'none'
+        return
+    } 
+    header.style.display = 'block'
+    footer.classList.remove('show');
 });
