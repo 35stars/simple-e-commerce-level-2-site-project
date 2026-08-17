@@ -6,27 +6,20 @@ footer {
    background: rgba(0, 0, 0, 1);
 }
 
+footer li {
+   list-style: none;
+}
+
 footer > a img {
    width: 90px;
    padding: 1rem;
 }
 
 
-footer li {
-   list-style: none;
-   padding: 1rem 0;
-}
-
 footer a {
    color:  white;
    text-decoration: none;
 }
-
-
-footer #copyright, footer #menu-footer {
-   padding: 1rem;
-}
-
 
 
 @media screen and (min-width: 360px){
@@ -43,6 +36,18 @@ footer #copyright, footer #menu-footer {
               visibility: visible;
        }
 
+      footer li {
+         padding-bottom: 5px;
+      }
+
+       footer #menu-footer {
+         padding: 0px 0 15px;
+      }
+
+      footer #copyright {
+         padding: 0px 0 .8rem;
+      }
+
 }
 
 @media screen and (min-width: 768px){
@@ -52,11 +57,18 @@ footer #copyright, footer #menu-footer {
        }
 
        footer li {
-          list-style: none;
           padding-right: 1rem;
        }
 
        #menu-footer {
               display: flex;
        }
+
+       footer #copyright {
+         padding: 0 1rem 15px;
+      }
+
+      footer li {
+         padding: 0px 1rem 0;
+      }
 } 
