@@ -1,0 +1,50 @@
+
+section#contacts {
+    padding: 150px 20px 120px;
+}
+
+#form-icons-div {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+#form-icons-div form,
+#form-icons-div > div {
+    width: 100%;
+    max-width: 450px;
+
+    padding: 1.2rem;
+
+    border: 1px dashed grey;
+}
+
+#icons-div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5rem;
+}
+
+.icons {
+    display: flex;
+    font-size: 1rem;
+}
+
+.icons div {
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 830px) {
+
+    #form-icons-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #form-icons-div form,
+    #form-icons-div > div {
+        max-width: 600px;
+    }
+}

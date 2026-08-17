@@ -1,0 +1,102 @@
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+body {
+	font-family: Arial, sans-serif;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding-top: 10rem;
+}
+
+#wrapper {
+
+	width: min(92%, 400px);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 5rem;
+	padding: 1.5rem;
+
+	border: 1px solid #aaa;
+	border-radius: 10px;
+
+	background: white;
+
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#wrapper h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+#wrapper > div {
+	display: flex;
+	flex-direction: column;
+
+	margin: 8px 0;
+}
+
+#wrapper input,
+#wrapper select {
+	width: 100%;
+
+	margin-top: 6px;
+
+	padding: 10px;
+
+	font-size: 1rem;
+
+	border: 1px solid #aaa;
+	border-radius: 5px;
+
+	outline: none;
+}
+
+#wrapper input:focus,
+#wrapper select:focus {
+	border-color: #333;
+}
+
+#result {
+	font-weight: bold;
+}
+
+#switch-btn {
+	font-weight: bold;
+	align-self: center;
+
+	margin-top: 1rem;
+
+	padding: 10px 15px;
+
+	border: none;
+	border-radius: 5px;
+
+	background: #222;
+	color: white;
+
+	cursor: pointer;
+
+	transition: background 0.2s ease;
+}
+
+#switch-btn:hover {
+	background: #444;
+}

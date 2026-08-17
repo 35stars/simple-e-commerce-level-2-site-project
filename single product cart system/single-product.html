@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Single Product Cart System</title>
+
+	<style>
+		
+		body {
+			font-family: Arial,sans-serif;
+			text-align: center;
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			height: 100vh;
+		}
+
+		p {
+			font-weight: bold;
+			font-size: 1.2rem;
+		}
+
+		.product {
+			border: 1px solid #ccc;
+			padding: 20px;
+			display: inline-block;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+			background: #fff;
+		}
+
+		.product img {
+			width: 250px;
+			height: auto;
+			border-radius: 10px;
+			margin-bottom: 10px;
+		}
+
+		.controls {
+			margin: 20px 0;
+		}
+
+		.controls button {
+			cursor: pointer;
+			padding: 10px;
+			width: 38px;
+		}
+
+		.total {
+			font-size: 1.8rem;
+			margin-bottom: 5px;
+		}
+
+		#checkout-btn {
+			padding: 10px 20px;
+			font-size: 10px;
+			margin: 5px;
+			cursor: pointer;
+			background-color: #28a745;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			font-size: 1.1rem;
+			transition: transform .3s ease;
+		}
+
+		#checkout-btn:hover{
+			transform: scale(1.05);
+		}
+
+		#back-to-home {
+			cursor: pointer;
+			background: rgba(0, 0, 0, .8);
+			border-style: none;
+			padding: .5rem;
+			font-weight: bold;
+			color: white;
+			position: fixed;
+			top: 0;
+			left: 0;
+			margin: 1rem;
+		}
+
+		#quantity {
+			padding: 0 10px 0;
+		}
+
+	</style>
+</head>
+<body>
+
+	<button id="back-to-home">Back to Home</button>
+	<div class="product">
+		<img src="../blue jeans.jpg" alt="">
+		<h2 id="print-name">Blue Jeans</h2>
+		<p>Price: $<span id="price"></span></p>
+
+		<div class="controls">
+			<button id="decrease-btn">-</button>
+			<span id="quantity">1</span>
+			<button id="increase-btn">+</button>
+		</div>
+
+		<!-- TOTAL -->
+		<div class="total">
+			Total: $<span id="total">10</span>
+		</div>
+		<button id="checkout-btn">Checkout</button>
+	</div>
+	<script src="single-product.js"></script>
+</body>
+</html>
